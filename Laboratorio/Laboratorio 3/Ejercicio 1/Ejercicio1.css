@@ -1,76 +1,101 @@
-@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
-*{
-    font-family: 'Bangers', cursive;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900i&display=swap');
+body{
+    background-color: rgb(26, 25, 25);
 }
-
-body {
-    background-color: black;
-}
-
 h1 {
-    color: white;
-    text-align: center;
+text-align: center;
+font-family: 'Raleway', sans-serif;
+color: rgb(218, 127, 127);
+margin: 1.5em auto 0.1em;
 }
 
-.container {
+
+#cont {
     display: grid;
     justify-content: center;
-    grid-template: repeat(7,120px) / repeat(7,120px);
-    grid-gap: 0.1em;
+    grid-template: 100px 100px 100px 100px 100px 100px 100px 100px/ 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-gap: 5px;
 }
 
-img {
+#cont>span {
     width: 100%;
     height: 100%;
+
+    margin: 0;
+}
+#cont>span>img{
+    margin: 0;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
-#span1{
-    grid-column: 1/8;
-    grid-row: 1;
+#cont>.i1 {
+    grid-column: 1/9;
+    grid-row: 1/3;
 }
 
-#span2 {
-    grid-column: 1;
-    grid-row: 2/6;
+#cont>.i2 {
+    grid-column: 1/3;
+    grid-row: 3/7;
 }
 
-#span5 {
-    grid-column: 2/4;
-    grid-row: 2;
+#cont>.i3 {
+    grid-column: 3/4;
+    grid-row: 3/4;
 }
 
-#span6 {
-    grid-column: 4/8;
-    grid-row: 2/4;
+#cont>.i4 {
+    grid-column: 4/5;
+    grid-row: 3/4;
 }
 
-#span7 {
-    grid-column: 2/4;
-    grid-row: 4/6;
+#cont>.i5 {
+    grid-column: 3/5;
+    grid-row: 4/5;
 }
 
-#span8{
-    grid-column: 4;
-    grid-row: 4/6;
+#cont>.i6 {
+    grid-column: 3/5;
+    grid-row: 5/7;
 }
 
-#span11{
-    grid-column: 7;
-    grid-row: 4/6;
+#cont>.i7 {
+    grid-column: 5/9;
+    grid-row: 3/5;
 }
 
-#span12 {
-    grid-column: 5/7;
+#cont>.i8 {
+    grid-column: 5/6;
+    grid-row: 5/7;
 }
 
-#span13{
-    grid-column: 1/4;
-    grid-row: 6/8;
+#cont>.i9 {
+    grid-column: 6/7;
+    grid-row: 5/6;
 }
 
-#span14{
-    grid-column: 4/8;
-    grid-row: 6/8;
+#cont>.i10 {
+    grid-column: 7/8;
+    grid-row: 5/6;
+}
+
+#cont>.i11 {
+    grid-column: 8/9;
+    grid-row: 5/6;
+}
+
+#cont>.i12 {
+    grid-column: 6/9;
+    grid-row: 6/7;
+}
+
+#cont>.i13 {
+    grid-column: 1/5;
+    grid-row: 7/9;
+}
+
+#cont>.i14 {
+    grid-column: 5/9;
+    grid-row: 7/9;
 }
