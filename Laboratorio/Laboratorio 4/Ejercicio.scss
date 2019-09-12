@@ -1,0 +1,67 @@
+$primary_color : #3F51B5;
+$secondary_color : #9C27B0;
+$accent_color : #FF5722;
+$color-faq: #f4385a;
+$color-download: rgb(121, 106, 42);
+$color-open: rgb(104, 53, 172);
+$color-fondo: rgba(14, 218, 184, 0.493);
+$opacidad-hover: 1;
+$standar_margin : 8px;
+$standar_padding : 4px;
+$standar_border : 1px solid $primary_color;
+
+@mixin hacer-flex($justify, $align, $flow) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-flow: $flow;
+  }
+
+  .btn {
+    border: solid 1px transparent;
+    border-radius: 0.7em;
+    box-shadow: 1px 1px black;
+    font-family: $fuente-botones;
+    color: white;
+    opacity: 0.6;
+  }
+  .b3 {
+    &.FAQ {
+      @include hacer-width-height(5em,auto);
+      background-color: $color-faq;
+    }
+  }
+  
+  .b2 {
+    &.Download {
+      background-color: $color-download;
+    }
+  }
+  .b1 {
+    &.open {
+      background-color: $color-open;
+    }
+  }
+  
+  .b5 {
+    &.Help {
+      @include hacer-width-height(6em,2.4em);
+    }
+  }
+  
+  .btn:hover,
+  p:hover,
+  img:hover {
+    opacity: $opacidad-hover;
+  }
+
+  .icon {
+    @include hacer-margin-padding(1em auto, 0);
+    @include hacer-width-height(50%,auto);
+    @include hacer-flex(center, flex-start, row wrap);
+  }
+
+  body {
+    background-image: url("http://www.name-doctor.com/nomi.png/36254.png");
+    margin-bottom: 1px;
+  }
