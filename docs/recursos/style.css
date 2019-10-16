@@ -205,8 +205,9 @@ figure {
 }
 
 img {
-  vertical-align: middle;
   border-style: none;
+  display:block;
+  margin:auto;
 }
 
 svg {
